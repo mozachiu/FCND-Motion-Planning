@@ -37,17 +37,7 @@ The plan_path() method read obstacle data from 'colliders.csv', get grid represe
 The class "Action" valuate the cost and return the allowed action. The method "valid_actions" returns a list of valid actions given a grid and current node.
 Then find a path from start to goal using A* with the method "a_star()". A* is a search algorithm calculate the sum cost of all plan with the lowest expected cost.
 Finally generate the waypoints  and sent to the simulator using the method "send_waypoints".
-` 
 
-And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
-![Top Down View](./misc/high_up.png)
-
-Here's | A | Snappy | Table
---- | --- | --- | ---
-1 | `highlight` | **bold** | 7.41
-2 | a | b | c
-3 | *italic* | text | 403
-4 | 2 | 3 | abcd
 
 ### Implementing Your Path Planning Algorithm
 
@@ -77,8 +67,7 @@ Minimal requirement here is to modify the code in planning_utils() to update the
 
 #### 6. Cull waypoints 
 For this step you can use a collinearity test or ray tracing method like Bresenham. The idea is simply to prune your path of unnecessary waypoints. Explain the code you used to accomplish this step.
-
-
+- Using collinearity_prune function provided by the lectures. The trajectories looks better.
 
 ### Execute the flight
 #### 1. Does it work?
