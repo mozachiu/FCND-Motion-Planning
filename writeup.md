@@ -28,11 +28,11 @@ You're reading it! Below I describe how I addressed each rubric point and where 
 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
 The "backyard_flyer.py" use fixed flight path after take off. The "motion_planning.py" uses a similar base as the "backyard_flyer". To calculate path before take off, it added PLANNING state and use the  method "plan_path" performs path planning, than get waypoints to fly to the goal.
-- planning-utils.py
+- motion_planning.py
 ` 
 Read obstacle data from 'colliders.csv', get grid representation of a 2D configuration space based on given obstacle data, drone altitude and safety distance with the method create_grid(). 
 ` 
-- planning-utils.py
+- planning_utils.py
 ` 
 Find a path from start to goal using A* with the method a_star(). A* is a search algorithm calculate the sum cost of all plan with the lowest expected cost. 
 ` 
