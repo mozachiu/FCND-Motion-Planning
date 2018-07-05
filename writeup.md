@@ -60,11 +60,10 @@ Here as long as you successfully determine your local position relative to globa
 - Retreived the current position from self.global_position.
 - Convert the current global position to local position using the method "global_to_local" with global home position get from last step from self.global_home.
 
-Meanwhile, here's a picture of me flying through the trees!
-![Forest Flying](./misc/in_the_trees.png)
-
 #### 3. Set grid start position from local position
 This is another step in adding flexibility to the start location. As long as it works you're good to go!
+- Get the grid map and the offset of the north and east coordinates using the method "create_grid", then we know the safety range to obstacles.
+- Set start point(grid_start) from current location.
 
 #### 4. Set grid goal position from geodetic coords
 This step is to add flexibility to the desired goal location. Should be able to choose any (lat, lon) within the map and have it rendered to a goal location on the grid.
