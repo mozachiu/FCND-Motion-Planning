@@ -73,6 +73,7 @@ This step is to add flexibility to the desired goal location. Should be able to 
 
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
 Minimal requirement here is to modify the code in planning_utils() to update the A* implementation to include diagonal motions on the grid that have a cost of sqrt(2), but more creative solutions are welcome. Explain the code you used to accomplish this step.
+- For better movement to the goal, I add SOUTH_EAST, NORTH_EAST, SOUTH_WEST and NORTH_WEST directions to the Action class with cost of sqrt(2). Also the valid_actions method make sure actions is valid.
 
 #### 6. Cull waypoints 
 For this step you can use a collinearity test or ray tracing method like Bresenham. The idea is simply to prune your path of unnecessary waypoints. Explain the code you used to accomplish this step.
