@@ -35,7 +35,8 @@ The plan_path() method read obstacle data from 'colliders.csv', get grid represe
 - planning_utils.py
 ` 
 The class "Action" valuate the cost and return the allowed action. The method "valid_actions" returns a list of valid actions given a grid and current node.
-Finally find a path from start to goal using A* with the method "a_star()". A* is a search algorithm calculate the sum cost of all plan with the lowest expected cost.
+Then find a path from start to goal using A* with the method "a_star()". A* is a search algorithm calculate the sum cost of all plan with the lowest expected cost.
+Finally generate the waypoints  and sent to the simulator using the method "send_waypoints".
 ` 
 
 And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
