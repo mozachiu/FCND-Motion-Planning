@@ -53,7 +53,7 @@ Here's | A | Snappy | Table
 
 #### 1. Set your global home position
 Here students should read the first line of the csv file, extract lat0 and lon0 as floating point values and use the self.set_home_position() method to set global home. Explain briefly how you accomplished this in your code.
-- Read the first line of the csv file, get the lat0 and lon0 values using with the code 'plan_path' method in `motion_planning.py`.
+- Read the first line of the csv file, get the lat0 and lon0 values using with the code 'plan_path' method in `motion_planning.py`. Feed the lat0 and lon0 value to the self.set_home_position() method as global home.
 
 #### 2. Set your current local position
 Here as long as you successfully determine your local position relative to global home you'll be all set. Explain briefly how you accomplished this in your code.
