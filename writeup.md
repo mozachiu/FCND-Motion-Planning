@@ -30,12 +30,12 @@ You're reading it! Below I describe how I addressed each rubric point and where 
 The "backyard_flyer.py" use fixed flight path after take off. The "motion_planning.py" uses a similar base as the "backyard_flyer". To calculate path before take off, it added PLANNING state and use the  method "plan_path" performs path planning, than get waypoints to fly to the goal.
 - motion_planning.py
 ` 
-Read obstacle data from 'colliders.csv', get grid representation of a 2D configuration space based on given obstacle data, drone altitude and safety distance with the method **create_grid()**. 
+Read obstacle data from 'colliders.csv', get grid representation of a 2D configuration space based on given obstacle data, drone altitude and safety distance with the method "create_grid()". 
 ` 
 - planning_utils.py
 ` 
-The class **Action** valuate the cost and return the allowed action. The method **valid_actions** returns a list of valid actions given a grid and current node.
-Finally find a path from start to goal using A* with the method **a_star()**. A* is a search algorithm calculate the sum cost of all plan with the lowest expected cost.
+The class "Action" valuate the cost and return the allowed action. The method "valid_actions" returns a list of valid actions given a grid and current node.
+Finally find a path from start to goal using A* with the method "a_star()". A* is a search algorithm calculate the sum cost of all plan with the lowest expected cost.
 ` 
 
 And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
