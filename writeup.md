@@ -27,10 +27,9 @@ You're reading it! Below I describe how I addressed each rubric point and where 
 ### Explain the Starter Code
 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
-The "motion_planning.py" uses a similar base as the Backyard Flyer.
-In motion_planning.py is added PLANNING state to calculate path before take off, backyard_flyer_solution.py create box shape flight path after take off.
+The "backyard_flyer.py" use fixed flight path after take off. The "motion_planning.py" uses a similar base as the "backyard_flyer". To calculate path before take off ,it added PLANNING state and then use the waypoints to fly to the goal.
 
-These scripts contain a basic planning implementation that includes...
+
 
 And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
 ![Top Down View](./misc/high_up.png)
