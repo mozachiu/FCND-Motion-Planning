@@ -67,6 +67,9 @@ This is another step in adding flexibility to the start location. As long as it 
 
 #### 4. Set grid goal position from geodetic coords
 This step is to add flexibility to the desired goal location. Should be able to choose any (lat, lon) within the map and have it rendered to a goal location on the grid.
+- Use the manual mode go to the desired place I like and get the goal position. For example [-122.400566, 37.796384].
+- Convert the global goal position the local position using  the method "global_to_local".
+- Set the local position to grid goal position.
 
 #### 5. Modify A* to include diagonal motion (or replace A* altogether)
 Minimal requirement here is to modify the code in planning_utils() to update the A* implementation to include diagonal motions on the grid that have a cost of sqrt(2), but more creative solutions are welcome. Explain the code you used to accomplish this step.
