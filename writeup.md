@@ -57,7 +57,8 @@ Here students should read the first line of the csv file, extract lat0 and lon0 
 
 #### 2. Set your current local position
 Here as long as you successfully determine your local position relative to global home you'll be all set. Explain briefly how you accomplished this in your code.
-
+- Retreived the current position from self.global_position.
+- Convert the current global position to local position using the method "global_to_local" with global home position get from last step from self.global_home.
 
 Meanwhile, here's a picture of me flying through the trees!
 ![Forest Flying](./misc/in_the_trees.png)
